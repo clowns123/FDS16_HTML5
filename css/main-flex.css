@@ -134,13 +134,58 @@ body {
   /* box-shadow: 0 -2px 5px 0 #000; */
   border-top: 2px solid #000;
   border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu-item {
+  border-left: 2px solid #fff;
+  position: relative;
 }
 .menu-link {
   color: #fff;
   font-weight: 700;
   font-size: 1.6rem;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+  display: block;
+  padding: 15px 20px;
 }
+.menu-item-act .menu-link {
+  color: #ff0;
+}
+/* .menu-item-act .menu-link::after {
+  content: "";
+  display: block;
+  border-top: 2px solid #000;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+
+} */
+.submenu {
+  position: absolute;
+  display: none;
+}
+.submenu a {
+  display: block;
+  padding: 10px;
+}
+.menu-item-act .submenu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  white-space: nowrap;
+}
+.menu-item:nth-child(1) .submenu,
+.menu-item:nth-child(2) .submenu,
+.menu-item:nth-child(3) .submenu {
+  left: 0;
+}
+.menu-item:nth-child(4) .submenu,
+.menu-item:nth-child(5) .submenu,
+.menu-item:nth-child(6) .submenu {
+  right: 0;
+}
+
 /* 메인 콘텐츠 */
 .main {
   display: flex;
