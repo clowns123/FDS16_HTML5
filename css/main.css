@@ -142,6 +142,7 @@ body {
   border-left: 2px solid #fff;
 }
 .menu-link {
+  outline: 0;
   display: block;
   color: #fff;
   font-weight: 700;
@@ -149,6 +150,16 @@ body {
   line-height: 45px;
   padding: 0 20px;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+.menu-item-act .menu-link,
+.menu-link:focus {
+  color: #ff0;
+}
+.menu-item-act .menu-link::after {
+  content: "";
+  display: block;
+  background-color: #000;
+  height: 2px;
 }
 .submenu {
   position: absolute;
