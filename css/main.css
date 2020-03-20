@@ -16,9 +16,6 @@
   clip: rect(0, 0, 0, 0);
   clip-path: polygon(0 0, 0 0, 0 0);
 }
-.container {
-  background-color: silver;
-}
 .main {
   background-color: blue;
 }
@@ -63,7 +60,8 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   color: #181818;
-  background-color: #fff;
+  background: url(./images/bg_flower.png) no-repeat 50% 0,
+    #ccc linear-gradient(180deg, #ccc, #eee, #fff);
 }
 
 /* 레이아웃 */
