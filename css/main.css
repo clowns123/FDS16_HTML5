@@ -205,8 +205,9 @@ body {
   position: relative;
 }
 .visual-text {
+  opacity: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  animation: textAni 3s forwards;
+  animation: textAni 0.5s forwards 1s ease-in-out;
   display: inline-block;
 }
 /* 메인 콘텐츠 */
