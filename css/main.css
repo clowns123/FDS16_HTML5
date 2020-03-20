@@ -19,10 +19,6 @@
 .container {
   background-color: silver;
 }
-.visual {
-  background-color: lime;
-  height: 10vh;
-}
 .main {
   background-color: blue;
 }
@@ -189,6 +185,29 @@ body {
 .submenu a {
   padding: 10px 0;
   display: block;
+}
+/* 비주얼 */
+@keyframes textAni {
+  0% {
+    opacity: 0;
+    font-size: 12px;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+    font-size: 24px;
+    transform: translate(400px, 75px);
+  }
+}
+
+.visual {
+  height: 120px;
+  position: relative;
+}
+.visual-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation: textAni 3s forwards;
+  display: inline-block;
 }
 /* 메인 콘텐츠 */
 .main {
