@@ -16,18 +16,6 @@
   clip: rect(0, 0, 0, 0);
   clip-path: polygon(0 0, 0 0, 0 0);
 }
-.main {
-  background-color: blue;
-}
-.group1 {
-  background-color: pink;
-}
-.group2 {
-  background-color: orange;
-}
-.group3 {
-  background-color: skyblue;
-}
 .slogan {
   background-color: blueviolet;
   height: 10vh;
@@ -242,6 +230,9 @@ body {
   align-items: stretch;
   justify-content: space-between;
   padding: 30px;
+  min-height: 400px;
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
 }
 .group1 {
   width: 250px;
