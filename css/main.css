@@ -350,7 +350,7 @@ body {
   font-size: 1.6rem;
 }
 .term-list {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-top: 15px;
   margin-bottom: 0;
 }
@@ -364,20 +364,28 @@ body {
 }
 .term-list-subject {
   font-weight: 700;
-  background-color: yellow;
   color: #296897;
 }
 .term-list-thumbnail {
-  background-color: pink;
   float: left;
 }
 .term-list-thumbnail img {
   vertical-align: top;
 }
 .term-list-brief {
-  background-color: lime;
   margin-top: 5px;
 }
+.term-list .even {
+  margin-top: 10px;
+}
+.term-list .even .term-list-subject,
+.term-list .even .term-list-brief {
+  float: left;
+}
+.term-list .even .term-list-thumbnail {
+  float: right;
+}
+
 /* 슬로건 */
 .slogan {
 }
