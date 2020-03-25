@@ -468,6 +468,7 @@ body {
 }
 .board li {
   margin-bottom: 10px;
+  background-color: yellow;
 }
 .board ul a {
   width: 275px;
@@ -476,6 +477,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   vertical-align: bottom;
+  background-color: pink;
 }
 .more {
   position: absolute;
