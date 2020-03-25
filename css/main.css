@@ -419,7 +419,76 @@ body {
   border-radius: 3px;
 }
 /* 공지사항 및 자료실 */
+
 .board {
+  position: relative;
+  padding-top: 50px;
+  margin-top: 25px;
+}
+.board h2 {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+.notice-heading {
+  left: 0;
+}
+.pds-heading {
+  left: 72px;
+}
+.board-act h2 {
+  z-index: 10 !important;
+}
+.tab {
+  display: block;
+  padding: 8px 10px;
+  border: 1px solid #aaa;
+  color: #999;
+  border-radius: 5px 5px 0 0;
+  background: #aaa linear-gradient(#ccc, #eee);
+}
+.board-act .tab {
+  border-color: #ed552f #ed552f #fff #ed552f;
+  color: #ed552f;
+  background: #fff;
+}
+.board-act ul,
+.board-act .more {
+  display: block !important;
+}
+.board ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: none;
+  min-height: 160px;
+}
+.board li {
+  margin-bottom: 10px;
+}
+.board ul a {
+  width: 275px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+.more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+  display: none;
+}
+.more .icon-plus {
+  color: hsla(110, 50%, 30%, 1);
+}
+
+/* .board {
   background-color: yellow;
   margin-top: 20px;
   position: relative;
@@ -496,7 +565,7 @@ body {
 .board [class$="-list"],
 .more {
   display: none;
-}
+} */
 /* 슬로건 */
 .slogan {
 }
