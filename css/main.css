@@ -628,12 +628,18 @@ body {
   border: 0;
   background-color: pink;
 } */
+.gradient-box {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  background: #ccc linear-gradient(#ccc, #eee);
+}
 .event {
-  background: lime;
   position: relative;
   border-bottom: 1px solid #999;
 }
-.event-heading {
+.event-heading,
+.related-heading {
   font-size: 1.5rem;
   margin: 0;
 }
@@ -651,7 +657,7 @@ body {
 .event-brief em {
   font-style: normal;
 }
-.btn-event {
+/* .btn-event {
   background-color: yellow;
   position: absolute;
   top: 0;
@@ -667,10 +673,41 @@ body {
   text-indent: 20px;
   white-space: nowrap;
   overflow: hidden;
-  /* cursor: pointer; */
 }
 .btn-event-next {
   background-position: -36px 0;
+} */
+.btn-event {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-event-prev,
+.btn-event-next {
+  position: relative;
+  width: 19px;
+  height: 18px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+}
+.btn-event button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/back_forward.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.btn-event-next::after {
+  background-position: -36px 0;
+}
+/* 관련 사이트 */
+.related {
+  margin-top: 10px;
 }
 /* 슬로건 */
 .slogan {
