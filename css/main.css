@@ -709,6 +709,37 @@ body {
 .related {
   margin-top: 10px;
 }
+.related-list {
+  height: 27px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+  transition: all 0.4s;
+  /* transition: height 2s, padding 0.5s 2s; */
+  /* transition-property: height, padding;
+  transition-duration: 2s, 0.5s;
+  transition-delay: 0s, 2s; */
+}
+.related-list:hover,
+.related-list:focus-within {
+  height: 147px;
+  padding: 10px 0;
+  outline: none;
+}
+.related-list a {
+  display: block;
+  line-height: 25px;
+  text-indent: 20px;
+}
+.related-list a:focus {
+  outline: 1px solid #296897;
+  outline-offset: -4px;
+}
 /* 슬로건 */
 .slogan {
 }
