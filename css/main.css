@@ -284,6 +284,7 @@ body {
 .login-form label {
   display: inline-block;
   width: 4em;
+  cursor: pointer;
 }
 /* .login-form input {
   width: 95px;
@@ -458,12 +459,15 @@ body {
 .board-act .more {
   display: block !important;
 }
+.board ul,
+.board .more {
+  display: none;
+}
 .board ul {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  display: none;
   min-height: 160px;
 }
 .board li {
@@ -477,12 +481,12 @@ body {
   text-overflow: ellipsis;
   vertical-align: bottom;
 }
-.more {
+.board .more,
+.news .more {
   position: absolute;
   top: -8px;
   right: -8px;
   padding: 8px;
-  display: none;
 }
 .more .icon-plus {
   color: hsla(110, 50%, 30%, 1);
@@ -612,7 +616,62 @@ body {
   left: 0;
   text-align: center;
 }
-
+/* 신규 이벤트 */
+/* .btn-event {
+  background-color: yellow;
+  height: 20px;
+  overflow: hidden;
+}
+.btn-event button {
+  width: 20px;
+  padding: 20px 0 0 0;
+  border: 0;
+  background-color: pink;
+} */
+.event {
+  background: lime;
+  position: relative;
+  border-bottom: 1px solid #999;
+}
+.event-heading {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.point-color {
+  color: #ed552f;
+}
+.event-thumbnail,
+.event-brief {
+  margin: 10px 0;
+}
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #999;
+}
+.event-brief em {
+  font-style: normal;
+}
+.btn-event {
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-event-prev,
+.btn-event-next {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  background: skyblue url(./images/back_forward.png) no-repeat 0 0;
+  text-indent: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  /* cursor: pointer; */
+}
+.btn-event-next {
+  background-position: -36px 0;
+}
 /* 슬로건 */
 .slogan {
 }
